@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f2f2f2;
+  position: relative;
+  overflow:hidden;
+  cursor:crosshair;
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #3498db;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+    </style>
   </head>
   <body>
-    <p id="para1">Sample para.</p>
-    <p id="para2">Samaple para.</p>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
     <script src="like.js"></script>
   </body>
 </html>

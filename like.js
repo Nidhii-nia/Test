@@ -1,4 +1,7 @@
-// var para1 = document.getElementById('para1');
-// para1.innerHTML = "Welcome";
-
-$('#para1').html('Welcome');
+document.addEventListener('click', function(event) {
+  const circle = document.createElement('div');
+  circle.classList.add('circle');
+  circle.style.left = `${event.clientX}px`;
+  circle.style.top = `${event.clientY}px`;
+  document.body.appendChild(circle);
+});
